@@ -6,6 +6,6 @@ namespace GameProject
 {
     interface IUserValidationService
     {
-        void Validation(Player player);
+        bool Validate(Player player);
     }
 }

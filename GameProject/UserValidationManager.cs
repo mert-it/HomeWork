@@ -6,17 +6,18 @@ namespace GameProject
 {
     class userValidationManager : IUserValidationService
     {
-        //UserValidationManager _userValidationManager;
-
-        public void Validation(Player player)
+    
+        public bool Validate(Player player)
         {
-            if (player.FirstName == "Mert" && player.LastName == "Özdemir")
+            if (player.FirstName == "Mert" && player.LastName == "Özdemir" && player.YearOfBirth==1986)
             {
-                Console.WriteLine(player.FirstName + " " + player.LastName + " için kimlik bilgileri doğrulandı.");
+                return true;
+               // Console.WriteLine(player.FirstName + " " + player.LastName + " için kimlik bilgileri doğrulandı.");
             }
             else
             {
-                Console.WriteLine("Kimlik bilgileri doğrulanamadı");
+                return false;
+               // Console.WriteLine("Kimlik bilgileri doğrulanamadı");
             }
         }
     }

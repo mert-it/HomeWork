@@ -12,15 +12,16 @@ namespace GameProject
             userValidationManager userValidationManager = new userValidationManager();
             GameSalesPlatformManager gameSalesPlatformManager = new GameSalesPlatformManager();
             CampaignManager campaignManager = new CampaignManager();
-            PlayerManager playerManager = new PlayerManager();
-
-            userValidationManager.Validation(player1);
+            PlayerManager playerManager = new PlayerManager(new userValidationManager());
 
             playerManager.Add(player1);
             playerManager.Delete(player2);
             playerManager.Update(player2);
 
-            campaignManager.NewYearCampaign(player1 ,game1);
+            gameSalesPlatformManager.Sale(player2, game1);
+
+            campaignManager.NewYearCampaign(player1, game1);
+            campaignManager.NewYearCampaign(player2, new Game { Id = 2, Name = "CS", UnitPrice = 400 });
 
 
         }

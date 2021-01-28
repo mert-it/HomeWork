@@ -8,7 +8,8 @@ namespace GameProject
     {
         public void Sale(Player player, Game game)
         {
-            Console.WriteLine(player.FirstName + player.LastName + " , " + game.Name + " oyununu" + game.UnitPrice + " bedelle satın aldı");
+          Console.WriteLine(player.FirstName +" " + player.LastName + ", " + game.Name + " oyununu " + game.UnitPrice + " TL bedelle satın aldı");
+            Console.WriteLine("****************************");
         }
     }
 }
