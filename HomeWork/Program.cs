@@ -37,6 +37,7 @@ namespace HomeWork
             foreach (var odev in odevler)
             {
                 odevManager.OdevListele(odev);
+               
             }
 
             
