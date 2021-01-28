@@ -6,7 +6,7 @@ namespace GameProject
     {
         static void Main(string[] args)
         {
-            Player player1 = new Player { FirstName = "Mert", LastName = "Özdemir", Id = 1, IdentityNumber = 123465789, YearOfBirth = 1985 };
+            Player player1 = new Player { FirstName = "Mert", LastName = "Özdemir", Id = 1, IdentityNumber = 123465789, YearOfBirth = 1986 };
             Player player2 = new Player { FirstName = "Ahmet", LastName = "Yıldız", Id = 2, IdentityNumber = 1234657890, YearOfBirth = 1985 };
             Game game1 = new Game { Id = 1, Name = "PUBG", UnitPrice= 250 };
             userValidationManager userValidationManager = new userValidationManager();

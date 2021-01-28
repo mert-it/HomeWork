@@ -15,8 +15,9 @@ namespace GameProject
 
         public void Add(Player player)
         {
-            if (_userValidationService.Validate(player))
+            if (_userValidationService.Validate(player)==true)
             {
+                Console.WriteLine("Kimlik bilgileri doğrulandı.");
                 Console.WriteLine(player.FirstName + " " + player.LastName + " Eklendi");
                 Console.WriteLine("****************************");
             }
